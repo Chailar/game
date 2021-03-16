@@ -126,27 +126,32 @@ public class MainFrame extends JFrame implements ActionListener, DocumentListene
         if (e.getSource() == this.button[0]) {
             this.text[0].setText(Integer
                     .toString(Integer.parseInt(this.text[0].getText()) + Integer.parseInt(this.button[0].getText())));
-            num[this.box.getSelectedIndex()] += Integer.parseInt(this.button[0].getText());
+            // num[this.box.getSelectedIndex()] +=
+            // Integer.parseInt(this.button[0].getText());
         }
         if (e.getSource() == this.button[1]) {
             this.text[0].setText(Integer
                     .toString(Integer.parseInt(this.text[0].getText()) + Integer.parseInt(this.button[1].getText())));
-            num[this.box.getSelectedIndex()] += Integer.parseInt(this.button[1].getText());
+            // num[this.box.getSelectedIndex()] +=
+            // Integer.parseInt(this.button[1].getText());
         }
         if (e.getSource() == this.button[2]) {
             this.text[0].setText(Integer
                     .toString(Integer.parseInt(this.text[0].getText()) + Integer.parseInt(this.button[2].getText())));
-            num[this.box.getSelectedIndex()] += Integer.parseInt(this.button[2].getText());
+            // num[this.box.getSelectedIndex()] +=
+            // Integer.parseInt(this.button[2].getText());
         }
         if (e.getSource() == this.button[3]) {
             this.text[0].setText(Integer
                     .toString(Integer.parseInt(this.text[0].getText()) + Integer.parseInt(this.button[3].getText())));
-            num[this.box.getSelectedIndex()] += Integer.parseInt(this.button[3].getText());
+            // num[this.box.getSelectedIndex()] +=
+            // Integer.parseInt(this.button[3].getText());
         }
         if (e.getSource() == this.button[4]) {
             this.text[0].setText(Integer
                     .toString(Integer.parseInt(this.text[0].getText()) + Integer.parseInt(this.button[4].getText())));
-            num[this.box.getSelectedIndex()] += Integer.parseInt(this.button[4].getText());
+            // num[this.box.getSelectedIndex()] +=
+            // Integer.parseInt(this.button[4].getText());
         }
     }
 
@@ -160,6 +165,7 @@ public class MainFrame extends JFrame implements ActionListener, DocumentListene
             label.setText("状态:已完成");
         else
             label.setText("状态:未完成");
+        num[this.box.getSelectedIndex()] = Integer.parseInt(text[0].getText());
     }
 
     @Override
@@ -169,6 +175,7 @@ public class MainFrame extends JFrame implements ActionListener, DocumentListene
                 label.setText("状态:已完成");
             else
                 label.setText("状态:未完成");
+            num[this.box.getSelectedIndex()] = Integer.parseInt(text[0].getText());
         }
     }
 
