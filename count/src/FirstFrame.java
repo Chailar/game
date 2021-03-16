@@ -40,9 +40,9 @@ public class FirstFrame extends JFrame implements ActionListener {
                     JOptionPane.showMessageDialog(this, (String) text[i].getText() + "不是整数，请修改");
                     break;
                 }
-                fileOut.close();
-                out.close();
             }
+            fileOut.close();
+            out.close();
         } catch (IOException exception) {
         }
         this.m = 1;
