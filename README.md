@@ -19,4 +19,4 @@
 
 初次启动需要输入已有的材料数目，日后不在输入即可读取，之后再次启动即可运行。
 
-由大佬改进VB程序改进，改编自http://my.4399.com/forums/thread-61846274#faxian
+由大佬VB程序改进，改编自http://my.4399.com/forums/thread-61846274#faxian
